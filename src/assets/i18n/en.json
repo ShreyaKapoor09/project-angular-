@@ -1,0 +1,20 @@
+{
+    "app":{
+        "button1":"Home",
+        "button2":"Register"
+    },
+    "home":{
+       "title": "Travel with us",
+        "about": "What do we do",
+        "details":"With a world full of fascinating destinations, choosing the perfect vacation spot can present a challenge. That's why we researched expert opinions, reader votes and current trends – and evaluated sights, cultures, scenic beauty, food scenes and more – to compile this list of the world's best places to visit. Use these recommendations to craft your travel bucket list, and cast your vote below to help us determine next year's list."
+    },
+    "contact": {
+     "label1": "Name: ",
+     "label2": "Username: ",
+     "label3": "Number: ",
+     "label4":"Password",
+     "optionTitle":"Select Your Destination",
+     "button":"Register",
+     "message": "Thank you for your time! Your details have been submitted!"
+    }
+}

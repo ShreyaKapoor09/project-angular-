@@ -1,0 +1,82 @@
+<ion-content>
+  <div class="image">
+    <ion-card class="main">
+      <div class="form">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <ion-item class="form">
+            <ion-label for="name"
+              >{{ "contact.label1" | translate }}
+            </ion-label>
+            <ion-input
+              type="text"
+              formControlName="name"
+              [ngClass]="{ 'is-invalid': submitted && value.name.errors }"
+            ></ion-input>
+            <div *ngIf="submitted && value.name.errors">
+              <div class="error-message" *ngIf="value.name.errors.required">
+                Name is required
+              </div>
+            </div>
+          </ion-item>
+          <ion-item class="form">
+            <ion-label for="username"
+              >{{ "contact.label2" | translate }}
+            </ion-label>
+            <ion-input
+              type="text"
+              formControlName="username"
+              [ngClass]="{ 'is-invalid': submitted && value.username.errors }"
+            ></ion-input>
+            <div *ngIf="submitted && value.username.errors">
+              <div class="error-message" *ngIf="value.username.errors.required">
+                User Name is required
+              </div>
+            </div>
+          </ion-item>
+          <ion-item class="form">
+            <ion-label for="number"
+              >{{ "contact.label3" | translate }}
+            </ion-label>
+            <ion-input
+              type="text"
+              formControlName="number"
+              [ngClass]="{ 'is-invalid': submitted && value.number.errors }"
+            ></ion-input>
+            <div *ngIf="submitted && value.number.errors">
+              <div class="error-message" *ngIf="value.number.errors.required">
+                Number is required
+              </div>
+            </div>
+          </ion-item>
+          <ion-item class="dropdown">
+            <select
+              formControlName="destination"
+              [ngClass]="{
+                'is-invalid': submitted && value.destination.errors
+              }"
+            >
+              <option>{{ "contact.optionTitle" | translate }}</option>
+              <option *ngFor="let option of options" [value]="option.id">
+                {{ option.name }}</option
+              >
+            </select>
+            <div
+              class="error-message"
+              *ngIf="submitted && value.destination.errors"
+            >
+              <div *ngIf="value.destination.errors.required">
+                Destination is required
+              </div>
+            </div>
+          </ion-item>
+          <div class="form">
+            <button class="register" class="btn btn-primary">
+              <div *ngIf="loading"></div>
+              {{ "contact.button" | translate }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

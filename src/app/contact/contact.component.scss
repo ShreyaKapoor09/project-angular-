@@ -1,0 +1,43 @@
+.image {
+  background-image: url(../../assets/images/beach.jpg);
+  height: 900px;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.main {
+    margin: 100px 0;
+    width: 58%;
+  opacity: 0.9;
+}
+
+.form {
+  font-size: 28px;
+  margin: 20px;
+
+  button {
+    margin: 20px;
+    font-size: 28px;
+    width: 170px;
+    padding: 10px;
+  }
+}
+
+.error-message{
+    color: crimson;
+    font-size: 20px;
+}
+.dropdown {
+  select {
+    width: 400px;
+    margin: 20px;
+    height: 70px;
+    font-size: 28px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #d4d3d3;
+  }
+}
