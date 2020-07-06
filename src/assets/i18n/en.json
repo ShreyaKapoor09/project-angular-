@@ -16,5 +16,11 @@
      "optionTitle":"Select Your Destination",
      "button":"Register",
      "message": "Thank you for your time! Your details have been submitted!"
+    },
+    "errorText":{
+        "error1":"Name is required",
+        "error2":"UserName is required",
+        "error3":"Number is required",
+        "error4":"Destination is required"
     }
 }

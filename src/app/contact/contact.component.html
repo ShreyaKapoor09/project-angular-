@@ -14,7 +14,7 @@
             ></ion-input>
             <div *ngIf="submitted && value.name.errors">
               <div class="error-message" *ngIf="value.name.errors.required">
-                Name is required
+                {{"errorText.error1" | translate}}
               </div>
             </div>
           </ion-item>
@@ -29,7 +29,7 @@
             ></ion-input>
             <div *ngIf="submitted && value.username.errors">
               <div class="error-message" *ngIf="value.username.errors.required">
-                User Name is required
+                {{"errorText.error2" | translate}}
               </div>
             </div>
           </ion-item>
@@ -44,7 +44,7 @@
             ></ion-input>
             <div *ngIf="submitted && value.number.errors">
               <div class="error-message" *ngIf="value.number.errors.required">
-                Number is required
+                {{"errorText.error3" | translate}}
               </div>
             </div>
           </ion-item>
@@ -65,7 +65,7 @@
               *ngIf="submitted && value.destination.errors"
             >
               <div *ngIf="value.destination.errors.required">
-                Destination is required
+                {{"errorText.error4" | translate}}
               </div>
             </div>
           </ion-item>
